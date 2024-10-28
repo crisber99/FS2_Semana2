@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px)
+{
+
+}        
+        
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header{
+    width: 100%;
+    text-align: center;
+    background: antiquewhite;
+}
+
+table{
+    border: 0px solid;
+}
+
+table td{
+    width: 50%;
+    border-bottom: 1px solid;
+}
+
+nav{
+    background-color: darkgray;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+article{
+    background-color: beige;
+}
+
+.divCentral {
+    display: flex;
+}
+
+.divLeft{
+    width:15%; 
+    display:inline-block;
+}
+
+.divCenter{
+    width:40%; 
+    display:inline-block;
+}
+
+.divRight{
+    width:85%; 
+    display:inline-block;
+}
+
+.h1Categoria{
+    text-align: center;
+}
+
+@keyframes mover {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(100px);}
+    100% {transform: translateX(0);}
+}
+
+.elemento{
+    animation: mover 3s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .fade-in {
+    animation: fadeIn 3s;
+  }
+
+  @keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+  }
+  .slide-in {
+    animation: slideIn 1s;
+  }
+
+  @keyframes slideOff {
+    0% {transform: translate(-100%);}
+    100% {transform: translate(0%);}
+  }
+  .slide-off {
+    animation: slideOff 5s ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  .pulse {
+    animation: pulse 1s infinite;
+  }
+
+footer {
+    background-color: rgb(85, 74, 74);
+    position: absolute;
+    width: 80%;
+    height: 40px;
+    color: white;
+    text-align: center;
+}
